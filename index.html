@@ -13,7 +13,7 @@
     gtag('config', 'G-LSGF5V3QMS');
   </script>
   <img src="LOGO.png" alt="Logo" style="height:120px; margin-bottom: 1em;">
-  <title>浸豆桶循環時序計算</title>
+  <title>Soaking Time Planning</title>
   <style>
     body { font-family: "Microsoft JhengHei", Arial, sans-serif; margin: 2em; }
     h1, h2 { color: #2c3e50; }
@@ -54,10 +54,10 @@
 </head>
 <body>
   
-  <h1>浸豆桶循環時序計算</h1>
+  <h1>Soaking Time Planning</h1>
 
   <div class="section">
-    <h2>Parameter Input</h2>
+    <h2></h2>
     <form id="calcForm" onsubmit="return false;">
       <div class="form-row">
         <label for="capacity">Capacity（kg/hr）：</label>
@@ -96,7 +96,7 @@
         if (timePattern.test(value)) {
           input.setCustomValidity('');
         } else {
-          input.setCustomValidity('請輸入有效的24小時制時間（HH:mm）');
+          input.setCustomValidity('Please enter a valid 24-hour time（HH:mm）');
         }
         
         input.value = value;
@@ -125,7 +125,7 @@
     function formatHourMinute(hour) {
       const h = Math.floor(hour);
       const m = Math.round((hour - h) * 60);
-      return `${h}小時${m > 0 ? m + '分鐘' : ''}`;
+      return `${h}Hour${m > 0 ? m + 'Mins' : ''}`;
     }
     function calculate() {
       const capacity = Number(document.getElementById('capacity').value);
