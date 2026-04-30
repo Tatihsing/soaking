@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T4FMD2YC2J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSGF5V3QMS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-T4FMD2YC2J');
-</script>
+    gtag('config', 'G-LSGF5V3QMS');
+  </script>
   <img src="LOGO.png" alt="Logo" style="height:120px; margin-bottom: 1em;">
-  <title>Soaking Time Planning</title>
+  <title>​Calculation of the cycle time of the soaking tanks</title>
   <style>
     body { font-family: "Microsoft JhengHei", Arial, sans-serif; margin: 2em; }
     h1, h2 { color: #2c3e50; }
@@ -54,10 +54,10 @@
 </head>
 <body>
   
-  <h1>Soaking Time Planning</h1>
+  <h1>Calculation of the cycle time of the soaking tanks</h1>
 
   <div class="section">
-    <h2></h2>
+    
     <form id="calcForm" onsubmit="return false;">
       <div class="form-row">
         <label for="capacity">Capacity（kg/hr）：</label>
@@ -125,7 +125,7 @@
     function formatHourMinute(hour) {
       const h = Math.floor(hour);
       const m = Math.round((hour - h) * 60);
-      return `${h}Hour${m > 0 ? m + 'Mins' : ''}`;
+      return `${h}H${m > 0 ? m + 'M' : ''}`;
     }
     function calculate() {
       const capacity = Number(document.getElementById('capacity').value);
